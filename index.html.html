@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReelSpark Media - Creative Agency</title>
+  <meta name="description" content="ReelSpark Media - Creative Agency for ads, videos, and design. Helping students, freelancers, and businesses grow online.">
+  <meta name="keywords" content="Freelance Agency, Ads, Video Editing, Graphic Design, ReelSpark Media">
+  <meta name="author" content="Anurag Gawai">
+  <style>
+    body { margin: 0; font-family: 'Poppins', sans-serif; background-color: #0a0a0a; color: white; overflow-x: hidden; }
+    header { position: fixed; width: 100%; top: 0; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px); display: flex; justify-content: space-between; align-items: center; padding: 15px 60px; z-index: 1000; }
+    header h1 { font-size: 1.8rem; background: linear-gradient(90deg, #ff7b00, #ff006e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    nav a { color: white; text-decoration: none; margin: 0 15px; transition: color 0.3s; }
+    nav a:hover { color: #ff7b00; }
+
+    .hero { height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+    .hero video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(50%); z-index: -1; }
+    .hero-content { text-align: center; max-width: 700px; animation: fadeInUp 1.5s ease; }
+    .hero-content h2 { font-size: 3rem; background: linear-gradient(90deg, #ff7b00, #ff006e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero-content p { font-size: 1.2rem; margin: 20px 0; }
+    .btn { background: linear-gradient(90deg, #ff7b00, #ff006e); padding: 12px 25px; border-radius: 30px; color: white; text-decoration: none; transition: 0.3s; }
+    .btn:hover { transform: scale(1.05); }
+
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+    .services, .portfolio, .about, .contact, .testimonials, .case-studies { padding: 100px 60px; text-align: center; }
+    .section-title { font-size: 2.5rem; margin-bottom: 40px; background: linear-gradient(90deg, #ff7b00, #ff006e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+    .service-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+    .card { background: #141414; padding: 40px 25px; border-radius: 20px; transition: transform 0.3s, box-shadow 0.3s; }
+    .card:hover { transform: translateY(-10px); box-shadow: 0 8px 30px rgba(255,123,0,0.2); }
+
+    .portfolio-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .portfolio-gallery img { width: 100%; border-radius: 15px; transition: transform 0.4s; }
+    .portfolio-gallery img:hover { transform: scale(1.05); }
+
+    .testimonial-card, .case-card { background: #141414; padding: 30px; border-radius: 20px; margin: 20px auto; max-width: 500px; box-shadow: 0 8px 25px rgba(255,123,0,0.15); }
+    .testimonial-card p, .case-card p { font-style: italic; color: #ccc; }
+    .testimonial-card h4, .case-card h4 { margin-top: 15px; color: #ff7b00; }
+
+    footer { background: #111; padding: 40px 20px; text-align: center; }
+    footer p { color: #ccc; }
+    .socials a { margin: 0 10px; color: #ff7b00; font-size: 1.5rem; transition: 0.3s; }
+    .socials a:hover { color: #ff006e; }
+
+    @media (max-width: 768px) {
+      header { padding: 15px 30px; }
+      .hero-content h2 { font-size: 2rem; }
+      .services, .portfolio, .about, .contact, .testimonials, .case-studies { padding: 60px 30px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ReelSpark Media</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#case-studies">Case Studies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <video autoplay muted loop>
+      <source src="https://cdn.pixabay.com/video/2020/08/28/48988-455190630_large.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <h2>We Turn Ideas Into Impact</h2>
+      <p>Your one-stop agency for Ads, Design & Digital Growth. Let’s build your brand stronger, smarter, and more creative.</p>
+      <a href="#contact" class="btn">Let’s Work Together</a>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Facebook & Instagram Ads</h3>
+        <p>Generate real leads and sales using proven ad strategies that convert.</p>
+      </div>
+      <div class="card">
+        <h3>Video Editing</h3>
+        <p>Create stunning reels, promo videos, and brand stories that capture attention.</p>
+      </div>
+      <div class="card">
+        <h3>Graphic Designing</h3>
+        <p>Design scroll-stopping visuals and creatives that drive engagement.</p>
+      </div>
+      <div class="card">
+        <h3>Brand Building</h3>
+        <p>Craft a complete brand identity — logo, colors, tone, and personality.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <h2 class="section-title">Our Portfolio</h2>
+    <div class="portfolio-gallery">
+      <img src="https://images.unsplash.com/photo-1603575448365-2aa1f60e8a4a" alt="Portfolio 1">
+      <img src="https://images.unsplash.com/photo-1603570419989-1b5d3b40e4a5" alt="Portfolio 2">
+      <img src="https://images.unsplash.com/photo-1581092795360-fd1ca1b1849f" alt="Portfolio 3">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Portfolio 4">
+      <img src="https://images.unsplash.com/photo-1508830524289-0adcbe822b40" alt="Portfolio 5">
+      <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2" alt="Portfolio 6">
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <h2 class="section-title">Client Testimonials</h2>
+    <div class="testimonial-card">
+      <p>“ReelSpark Media transformed our social media presence and boosted sales by 3x in just 2 months. Highly recommended!”</p>
+      <h4>- Priya S., Small Business Owner</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>“Their video editing team is amazing! Our ad campaigns are now engaging and professional.”</p>
+      <h4>- Rohit K., Freelancer</h4>
+    </div>
+  </section>
+
+  <section id="case-studies" class="case-studies">
+    <h2 class="section-title">Case Studies</h2>
+    <div class="case-card">
+      <h4>Boosting Local Shop Sales</h4>
+      <p>Implemented targeted FB ads for a local shop and increased walk-ins and online orders by 150% within a month.</p>
+    </div>
+    <div class="case-card">
+      <h4>Freelancer Branding Success</h4>
+      <p>Helped a freelancer build a strong personal brand online, leading to high-value clients and consistent leads.</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2 class="section-title">About ReelSpark Media</h2>
+    <p>We’re a young, energetic creative agency driven by passion, ideas, and innovation. Our mission is simple — help students, freelancers, and businesses grow online with creativity and strategy. Whether it’s ads, editing, or design — we do it with spark 🔥.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <p>Ready to grow your brand or business? Let’s connect on WhatsApp or drop us a message!</p>
+    <p><strong>Phone:</strong> <a href="tel:+919527550530" style="color:#ff7b00;">+91 9527550530</a></p>
+    <p><strong>Email:</strong> <a href="mailto:anuraggawai25@gmail.com" style="color:#ff7b00;">anuraggawai25@gmail.com</a></p>
+    <div class="socials">
+      <a href="https://instagram.com" target="_blank">&#x1F47E;</a>
+      <a href="https://facebook.com" target="_blank">&#x1F4F1;</a>
+      <a href="https://wa.me/919527550530" target="_blank">&#x1F4AC;</a>
+    </div>
+    <form action="https://formsubmit.co/anuraggawai25@gmail.com" method="POST" style="margin-top:30px;">
+      <input type="text" name="name" placeholder="Your Name" required style="padding:10px 20px;border:none;border-radius:25px;width:250px;margin:10px;">
+      <input type="email" name="email" placeholder="Your Email" required style="padding:10px 20px;border:none;border-radius:25px;width:250px;margin:10px;">
+      <textarea name="message" placeholder="Your Message" required style="padding:10px 20px;border:none;border-radius:25px;width:520px;height:100px;margin:10px;"></textarea><br>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 ReelSpark Media | Crafted with ❤️ by Anurag Gawai</p>
+  </footer>
+</body>
+</html>
